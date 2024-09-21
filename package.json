@@ -1,6 +1,6 @@
 {
-  "name": "halloween-web",
   "homepage": "https://zajolo.github.io/zajolo.github.io",
+  "name": "halloween-web",
   "private": true,
   "version": "0.0.0",
   "type": "module",
