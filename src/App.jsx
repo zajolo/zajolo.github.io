@@ -13,7 +13,7 @@ const App = () => {
   const [pick, setPick] = useState(false);
   const [showOne, setShow1] = useState(true);
   const [showTwo, setShow2] = useState(false);
-  const [showThree, setShow3] = useState()false);
+  const [showThree, setShow3] = useState(false);
   const [first,setFirst] = useState(0);
   const [sec,setSec] = useState(0);
   const [tre,setTre] = useState(0);
