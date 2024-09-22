@@ -64,7 +64,7 @@ const App = () => {
               <Photos photo3={tre} onDataChange={addPhoto3}/>
             </Row>
             <br/>
-            <Form>
+            <Form action="https://formsubmit.co/veritas0415@gmail.com" method="POST">
               <Row>
                 <Col>
                        <input type="text" placeholder="Your Name" name="name" required/>
@@ -76,23 +76,23 @@ const App = () => {
               <Row>
                 <Col></Col>
                   <Col>
-                    <input type="text" name="choice1" value={first} disabled readOnly/>
+                    <input type="text" name="choice1" value={first} readOnly/>
                   </Col>
               </Row>
               <Row>
                 <Col></Col>
                 <Col>
-                    <input type="text" name="choice2" value={sec} disabled readOnly/>
+                    <input type="text" name="choice2" value={sec} readOnly/>
                 </Col>
               </Row>
               <Row>
                 <Col></Col>
                 <Col>
-                    <input type="text" name="choice3" value={tre} disabled readOnly/>
+                    <input type="text" name="choice3" value={tre} readOnly/>
                 </Col>
               </Row>
               </div>
-                    <Button variant="primary" size="sm">
+                    <Button variant="primary" size="sm" type="submit">
                       Submit Choices
                     </Button>
             </Form>
