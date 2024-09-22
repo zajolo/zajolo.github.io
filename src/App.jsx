@@ -13,6 +13,7 @@ const App = () => {
   const [pick, setPick] = useState(false);
   const [showOne, setShow1] = useState(true);
   const [showTwo, setShow2] = useState(false);
+  const [showThree, setShow3] = useState()false);
   const [first,setFirst] = useState(0);
   const [sec,setSec] = useState(0);
   const [tre,setTre] = useState(0);
@@ -21,8 +22,14 @@ const App = () => {
     console.log({pick});
       if(pick === true){
         setShow1(false)
+        setShow3(false)
         setShow2(true);
       }
+  }
+  const Congrats = () =>{
+    setShow1(false)
+    setShow2(false)
+    setShow3(true);
   }
   const addPhoto= (first) =>{
       setFirst(first);
@@ -92,11 +99,19 @@ const App = () => {
                 </Col>
               </Row>
               </div>
-                    <Button variant="primary" size="sm" type="submit">
+                    <Button variant="primary" size="sm" type="submit" onClick={Congrats}>
                       Submit Choices
                     </Button>
             </Form>
-                </div> 
+        </div> 
+        <div style={{
+            display: (showThree ? 'flex' : 'none'),
+            justifyContent: 'center',
+            alignItems: 'center',
+            height: '100vh'
+            }}>
+            <h1>Congratulations, You're Invited!!</h1>
+        </div>
     </Container>
   )
 }
