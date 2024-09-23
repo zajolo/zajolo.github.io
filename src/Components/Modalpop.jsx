@@ -30,7 +30,7 @@ function Modalpop(props) {
 
   return (
     <>
-      <Button variant="primary" size="lg" onClick={handleShow}>
+      <Button variant="warning" size="lg" onClick={handleShow}>
         Begin Quiz
       </Button>
 
@@ -40,9 +40,10 @@ function Modalpop(props) {
         backdrop="static"
         keyboard={false}
         centered
+        className = "popup"
       >
         <Modal.Header closeButton>
-          <Modal.Title>Modal title</Modal.Title>
+          <Modal.Title>FYI: Sometimes you need to click a wrong answer to click a right one.</Modal.Title>
         </Modal.Header>
         <Modal.Body>
           {<Test answer ={answer} onDataChange={addAnswer}/>}

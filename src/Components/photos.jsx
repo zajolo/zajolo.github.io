@@ -14,7 +14,7 @@ function Photos (props){
     }
 
     return(
-        <Container>
+        <div>
             <Row>
                 <Col style={{
             display: 'flex',
@@ -25,12 +25,9 @@ function Photos (props){
             </Row>
             <br/>
             <Row>
-                <Success photo = {photo} onDataChange={addPic}/>
+                <Col><Success photo = {photo} onDataChange={addPic}/></Col>
             </Row>
-            <Row>
-
-            </Row>
-        </Container>
+        </div>
     );
 }
 

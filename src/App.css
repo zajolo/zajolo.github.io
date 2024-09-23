@@ -1,0 +1,25 @@
+.popup .modal-content{
+    background-color: rgb(173, 111, 231);
+}
+.popup2 .modal-content{
+    background-color: rgb(173, 111, 231);
+    text-align: center;
+}
+.dropdown{
+    color: #fbd12a;
+    background-color: black;
+}
+.input{
+    background-color: #643d9e;
+    color:#fbd12a;
+}
+.instructions{
+    color: #fbd12a;
+    text-align: center;
+    background-color: #643d9e;
+    margin: 10px;
+}
+.bolding{
+    color: #fbd12a;
+    font-weight: bold;
+}

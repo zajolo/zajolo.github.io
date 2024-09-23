@@ -34,7 +34,7 @@ function test(props) {
     var randQuest = quiz[randomKey];
     var answerKey = randQuest.key;
     var thisChoice = null;
-    var helper = 'Please click an option.'
+    var helper = 'Please select an option.'
 
     return (
           <Container>
@@ -57,7 +57,7 @@ function test(props) {
             <Row>{helper}</Row>
             <Row><br/></Row>
             <Row>
-              <Button onClick={handleSubmit}>Submit</Button>
+              <Button variant="warning" onClick={handleSubmit}>Submit</Button>
             </Row>
           </Container>
     );

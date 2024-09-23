@@ -10,8 +10,8 @@ function Success(props) {
       }
 
     return (
-        <Container>
-            <Form.Select aria-label="Default select example" size="sm" onChange={(e) => handleSelect(e.target.value)}>
+        <div>
+            <Form.Select className="dropdown" aria-label="Default select example" size="sm" onChange={(e) => handleSelect(e.target.value)}>
                 {Object.keys(Villain).map((key, i) => (
                     <option
                         key={i}
@@ -21,28 +21,7 @@ function Success(props) {
                     </option>
                 ))}
             </Form.Select>
-        </Container>
-        
-        /*<img src={Villain[0].image}/>
-            <Form.Select aria-label="Default select example" size="sm">
-                {Object.keys(Villain).map((key, i) => (
-                    <option
-                        key={i}
-                    >
-                        {Villain[key].name}
-                    </option>
-                ))}
-            </Form.Select>
-            <br/>
-            <Form.Select aria-label="Default select example" size="sm">
-                {Object.keys(Villain).map((key, i) => (
-                    <option
-                        key={i}
-                    >
-                        {Villain[key].name}
-                    </option>
-                ))}
-            </Form.Select>*/
+        </div>
     );
   }
   
